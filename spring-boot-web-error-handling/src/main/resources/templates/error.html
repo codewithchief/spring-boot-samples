@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Spring Boot Web Error Handling Demo</title>
+</head>
+<body>
+	<h1>Oops!!!</h1>
+
+	<div>
+		Exception : "<span th:text="${error}"></span>" for requested resource
+		"<span th:text="${path}"></span>"
+	</div>
+
+	<hr />
+
+	<div>
+		Error Message : <span th:text="${message}"></span>
+	</div>
+
+	<hr />
+
+	<div>
+		Exception : <span th:text="${exception}"></span>
+	</div>
+
+	<hr />
+
+	<div>
+		<span th:text="${trace}"></span>
+	</div>
+
+	<hr />
+
+	<div>
+		Status Code : <span th:text=${status}></span> <span
+			th:text=${timestamp}></span>
+	</div>
+
+</body>
+</html>
